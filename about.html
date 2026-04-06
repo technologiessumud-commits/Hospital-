@@ -4,108 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us – HealthCare Hospital</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="bg-gray-50">
-    <!-- Same navbar as index.html – copy-paste from index.html or use JS include -->
-    <!-- For brevity, I'll show the unique content only, but in actual files you repeat navbar/footer -->
-    <!-- In a real project you'd copy the exact navbar and footer from index.html -->
-    <!-- I'll provide the full page below -->
 
-    <nav class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center space-x-2">
-                    <div class="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center"><span class="text-white text-xl font-bold">H</span></div>
-                    <span class="text-2xl font-bold text-teal-600">HealthCare</span>
+<!-- ✅ Navbar -->
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center">
+                    <span class="text-white text-xl font-bold">H</span>
                 </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-teal-600 font-semibold">Home</a>
-                    <a href="about.html" class="text-teal-600 border-b-2 border-teal-600 pb-1 font-semibold">About</a>
-                    <a href="services.html" class="text-gray-700 hover:text-teal-600 font-semibold">Services</a>
-                    <a href="doctors.html" class="text-gray-700 hover:text-teal-600 font-semibold">Doctors</a>
-                    <a href="appointment.html" class="text-gray-700 hover:text-teal-600 font-semibold">Appointment</a>
-                    <a href="contact.html" class="text-gray-700 hover:text-teal-600 font-semibold">Contact</a>
-                </div>
-                <button id="menu-btn" class="md:hidden text-gray-700 text-2xl"><i class="fas fa-bars"></i></button>
+                <span class="text-2xl font-bold text-teal-600">HealthCare</span>
             </div>
-            <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <a href="index.html" class="block text-gray-700 hover:text-teal-600 py-2">Home</a>
-                <a href="about.html" class="block text-teal-600 font-semibold py-2">About</a>
-                <a href="services.html" class="block text-gray-700 hover:text-teal-600 py-2">Services</a>
-                <a href="doctors.html" class="block text-gray-700 hover:text-teal-600 py-2">Doctors</a>
-                <a href="appointment.html" class="block text-gray-700 hover:text-teal-600 py-2">Appointment</a>
-                <a href="contact.html" class="block text-gray-700 hover:text-teal-600 py-2">Contact</a>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero -->
-    <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">About HealthCare Hospital</h1>
-            <p class="text-xl max-w-3xl mx-auto">Serving the community with excellence, compassion, and innovation for over 25 years</p>
-        </div>
-    </section>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="text-teal-600 border-b-2 border-teal-600 pb-1 font-semibold">About</a>
+                <a href="services.html">Services</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="appointment.html">Appointment</a>
+                <a href="contact.html">Contact</a>
+            </div>
 
-    <!-- Story -->
-    <section class="py-16">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Story</h2>
-                <p class="text-gray-600 mb-4">Founded in 1995, HealthCare Hospital has grown from a small clinic to one of the region's most trusted healthcare institutions. We have consistently provided high-quality medical care while embracing the latest technological advancements in medicine.</p>
-                <p class="text-gray-600 mb-4">With over 500 dedicated healthcare professionals, 200+ beds, and state-of-the-art facilities, we serve more than 100,000 patients annually. Our commitment to patient-centered care has earned us numerous accreditations and awards.</p>
-                <p class="text-gray-600">At HealthCare, we believe that every patient deserves personalized attention and the highest standard of medical care. Our multidisciplinary approach ensures comprehensive treatment for all health conditions.</p>
-            </div>
-            <div class="bg-gray-200 rounded-lg h-96 overflow-hidden shadow-xl">
-                <img src="https://picsum.photos/id/104/600/400" alt="Hospital" class="w-full h-full object-cover">
-            </div>
+            <button id="menu-btn" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-    </section>
 
-    <!-- Mission & Vision -->
-    <section class="py-16 bg-gray-100">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-white rounded-xl shadow-lg p-8">
-                <div class="text-5xl mb-4">🎯</div>
-                <h3 class="text-2xl font-bold text-gray-800 mb-3">Our Mission</h3>
-                <p class="text-gray-600">To provide accessible, high-quality healthcare services with compassion and respect, improving the health and well-being of our community through excellence in patient care, medical education, and research.</p>
-            </div>
-            <div class="bg-white rounded-xl shadow-lg p-8">
-                <div class="text-5xl mb-4">👁️</div>
-                <h3 class="text-2xl font-bold text-gray-800 mb-3">Our Vision</h3>
-                <p class="text-gray-600">To be a leading healthcare institution recognized for clinical excellence, innovation, and patient-centered care, setting new standards in medical services.</p>
-            </div>
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+            <a href="index.html" class="block py-2">Home</a>
+            <a href="about.html" class="block py-2 text-teal-600">About</a>
+            <a href="services.html" class="block py-2">Services</a>
+            <a href="doctors.html" class="block py-2">Doctors</a>
+            <a href="appointment.html" class="block py-2">Appointment</a>
+            <a href="contact.html" class="block py-2">Contact</a>
         </div>
-    </section>
+    </div>
+</nav>
 
-    <!-- Core Values -->
-    <section class="py-16">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Our Core Values</h2>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
-                <div><div class="w-20 h-20 bg-teal-100 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">❤️</div><h4 class="font-bold">Compassion</h4><p class="text-gray-600">Treating every patient with empathy</p></div>
-                <div><div class="w-20 h-20 bg-teal-100 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">⭐</div><h4 class="font-bold">Excellence</h4><p class="text-gray-600">Highest standards in everything</p></div>
-                <div><div class="w-20 h-20 bg-teal-100 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">🤝</div><h4 class="font-bold">Integrity</h4><p class="text-gray-600">Honest, ethical practices</p></div>
-                <div><div class="w-20 h-20 bg-teal-100 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">💡</div><h4 class="font-bold">Innovation</h4><p class="text-gray-600">Embracing new technologies</p></div>
-            </div>
-        </div>
-    </section>
+<!-- Hero -->
+<section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">About HealthCare Hospital</h1>
+        <p class="text-xl max-w-3xl mx-auto">
+            Serving the community with excellence, compassion, and innovation for over 25 years
+        </p>
+    </div>
+</section>
 
-    <!-- Footer (copy from index.html) -->
-    <footer class="bg-gray-900 text-white mt-16">
-        <div class="max-w-7xl mx-auto px-4 py-12">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div><h3 class="text-2xl font-bold text-teal-400 mb-4">HealthCare</h3><p class="text-gray-400">Providing quality healthcare services since 1995.</p><div class="flex space-x-4 mt-4"><a href="#" class="text-gray-400 hover:text-teal-400"><i class="fab fa-facebook-f"></i></a><a href="#" class="text-gray-400 hover:text-teal-400"><i class="fab fa-twitter"></i></a><a href="#" class="text-gray-400 hover:text-teal-400"><i class="fab fa-instagram"></i></a></div></div>
-                <div><h4 class="text-lg font-semibold mb-4">Quick Links</h4><ul class="space-y-2"><li><a href="about.html" class="text-gray-400 hover:text-teal-400">About Us</a></li><li><a href="services.html" class="text-gray-400 hover:text-teal-400">Services</a></li><li><a href="doctors.html" class="text-gray-400 hover:text-teal-400">Doctors</a></li><li><a href="appointment.html" class="text-gray-400 hover:text-teal-400">Appointment</a></li></ul></div>
-                <div><h4 class="text-lg font-semibold mb-4">Contact</h4><ul class="space-y-2 text-gray-400"><li><i class="fas fa-map-marker-alt mr-2"></i> 123 Healthcare Ave</li><li><i class="fas fa-phone mr-2"></i> (555) 123-4567</li><li><i class="fas fa-envelope mr-2"></i> info@healthcare.com</li></ul></div>
-                <div><h4 class="text-lg font-semibold mb-4">Newsletter</h4><div class="flex"><input type="email" placeholder="Your email" class="flex-1 px-3 py-2 rounded-l-lg text-gray-900"><button class="bg-teal-600 px-4 py-2 rounded-r-lg">Subscribe</button></div></div>
-            </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">&copy; 2024 HealthCare Hospital.</div>
+<!-- Story -->
+<section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+            <h2 class="text-3xl font-bold mb-4">Our Story</h2>
+            <p class="text-gray-600 mb-4">
+                Founded in 1995, HealthCare Hospital has grown from a small clinic to one of the region's most trusted healthcare institutions.
+            </p>
+            <p class="text-gray-600 mb-4">
+                With over 500 professionals and 200+ beds, we serve more than 100,000 patients annually.
+            </p>
+            <p class="text-gray-600">
+                We believe every patient deserves personalized care and the highest standard of treatment.
+            </p>
         </div>
-    </footer>
-    <script src="js/main.js"></script>
+
+        <img src="https://picsum.photos/id/104/600/400"
+             class="rounded-lg shadow-xl w-full h-full object-cover">
+    </div>
+</section>
+
+<!-- Mission -->
+<section class="py-16 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+
+        <div class="bg-white p-8 rounded-xl shadow">
+            <h3 class="text-2xl font-bold mb-3">Our Mission</h3>
+            <p>Provide high-quality healthcare with compassion.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow">
+            <h3 class="text-2xl font-bold mb-3">Our Vision</h3>
+            <p>Be a leading healthcare institution.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white mt-16 text-center py-6">
+    <p>&copy; 2024 HealthCare Hospital</p>
+</footer>
+
+<!-- ✅ FIXED HAMBURGER MENU -->
+<script>
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const icon = menuBtn.querySelector('i');
+
+menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+
+    if (mobileMenu.classList.contains('hidden')) {
+        icon.classList.replace('fa-times','fa-bars');
+    } else {
+        icon.classList.replace('fa-bars','fa-times');
+    }
+});
+
+// Auto close on click
+document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        icon.classList.replace('fa-times','fa-bars');
+    });
+});
+</script>
+
 </body>
 </html>
