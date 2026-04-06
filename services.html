@@ -4,41 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services – HealthCare Hospital</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <!-- Same navbar as index.html – include it fully here (same code) -->
-    <!-- I'll skip repeating the navbar code for brevity; in practice copy from index.html -->
-    <!-- For the answer, I'll provide the main content only but mention that navbar/footer are identical -->
 
-    <nav class="bg-white shadow-lg sticky top-0 z-50">...</nav> <!-- copy from index.html -->
+<body class="bg-gray-50">
 
-    <section class="bg-gradient-to-r from-teal-600 to-teal-800 text-white py-16">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Medical Services</h1>
-            <p class="text-xl">Comprehensive healthcare services delivered by expert professionals using advanced technology</p>
+<!-- ✅ Navbar -->
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold">H</span>
+                </div>
+                <span class="text-xl font-bold text-teal-600">HealthCare</span>
+            </div>
+
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html" class="text-teal-600 font-bold">Services</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="appointment.html">Appointment</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-    </section>
 
-    <section class="py-16">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Service cards (9 services) -->
-            <div class="bg-white rounded-xl shadow-lg p-6"><div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4">🚑</div><h3 class="text-xl font-bold">Emergency Care</h3><p class="text-gray-600">24/7 emergency services with rapid response teams.</p></div>
-            <div class="bg-white rounded-xl shadow-lg p-6"><div class="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4">❤️</div><h3 class="text-xl font-bold">Cardiology</h3><p class="text-gray-600">Comprehensive heart care including diagnostics and surgery.</p></div>
-            <div class="bg-white rounded-xl shadow-lg p-6"><div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4">🧠</div><h3 class="text-xl font-bold">Neurology</h3><p class="text-gray-600">Expert treatment for brain, spine, and nervous system disorders.</p></div>
-            <div class="bg-white rounded-xl shadow-lg p-6"><div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4">👶</div><h3 class="text-xl font-bold">Pediatrics</h3><p class="text-gray-600">Specialized care for infants, children, and adolescents.</p></div>
-            <div class="bg-white rounded-xl shadow-lg p-6"><div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4">🦴</div><h3 class="text-xl font-bold">Orthopedics</h3><p class="text-gray-600">Bone, joint, and muscle treatment including sports medicine.</p></div>
-            <div class="bg-white rounded-xl shadow-lg p-6"><div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4">🤰</div><h3 class="text-xl font-bold">Maternity</h3><p class="text-gray-600">Complete prenatal, delivery, and postnatal care.</p></div>
-            <div class="bg-white rounded-xl shadow-lg p-6"><div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4">📷</div><h3 class="text-xl font-bold">Radiology</h3><p class="text-gray-600">MRI, CT scan, X-ray, and ultrasound.</p></div>
-            <div class="bg-white rounded-xl shadow-lg p-6"><div class="bg-teal-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4">🏃</div><h3 class="text-xl font-bold">Physical Therapy</h3><p class="text-gray-600">Rehabilitation services to restore movement.</p></div>
-            <div class="bg-white rounded-xl shadow-lg p-6"><div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4">🦷</div><h3 class="text-xl font-bold">Dental Care</h3><p class="text-gray-600">Preventive, restorative, and cosmetic dentistry.</p></div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block py-2">Home</a>
+            <a href="about.html" class="block py-2">About</a>
+            <a href="services.html" class="block py-2 text-teal-600">Services</a>
+            <a href="doctors.html" class="block py-2">Doctors</a>
+            <a href="appointment.html" class="block py-2">Appointment</a>
+            <a href="contact.html" class="block py-2">Contact</a>
         </div>
-    </section>
+    </div>
+</nav>
 
-    <!-- Footer same as index.html -->
-    <footer class="bg-gray-900 text-white mt-16">...</footer>
-    <script src="js/main.js"></script>
+<!-- Hero -->
+<section class="bg-gradient-to-r from-teal-600 to-teal-800 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Medical Services</h1>
+        <p class="text-xl">
+            Comprehensive healthcare services delivered by expert professionals using advanced technology
+        </p>
+    </div>
+</section>
+
+<!-- Services -->
+<section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- 9 services (UNCHANGED) -->
+        <div class="bg-white rounded-xl shadow-lg p-6"><div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4">🚑</div><h3 class="text-xl font-bold">Emergency Care</h3><p class="text-gray-600">24/7 emergency services with rapid response teams.</p></div>
+
+        <div class="bg-white rounded-xl shadow-lg p-6"><div class="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4">❤️</div><h3 class="text-xl font-bold">Cardiology</h3><p class="text-gray-600">Comprehensive heart care including diagnostics and surgery.</p></div>
+
+        <div class="bg-white rounded-xl shadow-lg p-6"><div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4">🧠</div><h3 class="text-xl font-bold">Neurology</h3><p class="text-gray-600">Expert treatment for brain and nervous system disorders.</p></div>
+
+        <div class="bg-white rounded-xl shadow-lg p-6"><div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4">👶</div><h3 class="text-xl font-bold">Pediatrics</h3><p class="text-gray-600">Specialized care for children.</p></div>
+
+        <div class="bg-white rounded-xl shadow-lg p-6"><div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4">🦴</div><h3 class="text-xl font-bold">Orthopedics</h3><p class="text-gray-600">Bone and joint treatment.</p></div>
+
+        <div class="bg-white rounded-xl shadow-lg p-6"><div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4">🤰</div><h3 class="text-xl font-bold">Maternity</h3><p class="text-gray-600">Complete maternity care.</p></div>
+
+        <div class="bg-white rounded-xl shadow-lg p-6"><div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4">📷</div><h3 class="text-xl font-bold">Radiology</h3><p class="text-gray-600">MRI, CT, X-ray services.</p></div>
+
+        <div class="bg-white rounded-xl shadow-lg p-6"><div class="bg-teal-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4">🏃</div><h3 class="text-xl font-bold">Physical Therapy</h3><p class="text-gray-600">Rehabilitation services.</p></div>
+
+        <div class="bg-white rounded-xl shadow-lg p-6"><div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4">🦷</div><h3 class="text-xl font-bold">Dental Care</h3><p class="text-gray-600">Complete dental services.</p></div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white mt-16">
+    <div class="max-w-7xl mx-auto px-4 py-10 text-center">
+        <h3 class="text-2xl font-bold text-teal-400 mb-4">HealthCare</h3>
+        <p class="text-gray-400">Providing quality healthcare since 1995.</p>
+        <p class="text-gray-500 mt-6">&copy; 2024 HealthCare Hospital</p>
+    </div>
+</footer>
+
+<!-- ✅ Hamburger Fix -->
+<script>
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const icon = menuBtn.querySelector('i');
+
+menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+
+    if (mobileMenu.classList.contains('hidden')) {
+        icon.classList.replace('fa-times','fa-bars');
+    } else {
+        icon.classList.replace('fa-bars','fa-times');
+    }
+});
+
+document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        icon.classList.replace('fa-times','fa-bars');
+    });
+});
+</script>
+
 </body>
 </html>
