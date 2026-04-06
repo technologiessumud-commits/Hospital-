@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>]
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Hospital – Home</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <!-- Navbar (sticky) -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center">
+                        <span class="text-white text-xl font-bold">H</span>
+                    </div>
+                    <span class="text-2xl font-bold text-teal-600">HealthCare</span>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-teal-600 border-b-2 border-teal-600 pb-1 font-semibold">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-teal-600 font-semibold">About</a>
+                    <a href="services.html" class="text-gray-700 hover:text-teal-600 font-semibold">Services</a>
+                    <a href="doctors.html" class="text-gray-700 hover:text-teal-600 font-semibold">Doctors</a>
+                    <a href="appointment.html" class="text-gray-700 hover:text-teal-600 font-semibold">Appointment</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-teal-600 font-semibold">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <button id="menu-btn" class="md:hidden text-gray-700 text-2xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block text-teal-600 font-semibold py-2">Home</a>
+                <a href="about.html" class="block text-gray-700 hover:text-teal-600 py-2">About</a>
+                <a href="services.html" class="block text-gray-700 hover:text-teal-600 py-2">Services</a>
+                <a href="doctors.html" class="block text-gray-700 hover:text-teal-600 py-2">Doctors</a>
+                <a href="appointment.html" class="block text-gray-700 hover:text-teal-600 py-2">Appointment</a>
+                <a href="contact.html" class="block text-gray-700 hover:text-teal-600 py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-teal-600 to-teal-700 text-white py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Your Health, Our Priority</h1>
+                <p class="text-xl mb-8 opacity-90">Providing compassionate, cutting-edge healthcare services with a personal touch. Your journey to better health starts here.</p>
+                <div class="flex gap-4 flex-wrap">
+                    <a href="appointment.html" class="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-6 py-3 rounded-lg transition inline-block">Book Appointment</a>
+                    <a href="about.html" class="border-2 border-white text-white hover:bg-white hover:text-teal-600 font-semibold px-6 py-3 rounded-lg transition inline-block">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-50"></div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Medical Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We offer a comprehensive range of healthcare services to meet all your medical needs</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+                    <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4">🚑</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Emergency Care</h3>
+                    <p class="text-gray-600">24/7 emergency services with rapid response teams and advanced life support.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+                    <div class="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4">❤️</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Cardiology</h3>
+                    <p class="text-gray-600">Comprehensive heart care including diagnostics, interventions, and surgery.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4">🧠</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Neurology</h3>
+                    <p class="text-gray-600">Expert treatment for brain, spine, and nervous system disorders.</p>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="services.html" class="border-2 border-teal-600 text-teal-600 hover:bg-teal-600 hover:text-white font-semibold px-6 py-3 rounded-lg transition inline-block">View All Services →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Need Immediate Medical Attention?</h2>
+            <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">Our emergency department is open 24/7. Don't hesitate to visit us or call our emergency helpline.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:+5551234567" class="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-6 py-3 rounded-lg transition inline-block">Call Emergency: (555) 123-4567</a>
+                <a href="contact.html" class="border-2 border-white text-white hover:bg-white hover:text-blue-800 font-semibold px-6 py-3 rounded-lg transition inline-block">Find Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">What Our Patients Say</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Real stories from patients who trusted us with their health</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div><h4 class="font-bold">John Davis</h4><p class="text-sm text-gray-500">Cardiac Patient</p></div>
+                    </div>
+                    <div class="text-yellow-400 mb-3">★★★★★</div>
+                    <p class="text-gray-600 italic">"The care I received was exceptional. The doctors and nurses were incredibly professional and compassionate."</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Mary" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div><h4 class="font-bold">Mary Smith</h4><p class="text-sm text-gray-500">Mother of Patient</p></div>
+                    </div>
+                    <div class="text-yellow-400 mb-3">★★★★★</div>
+                    <p class="text-gray-600 italic">"Outstanding pediatric care! My son received the best treatment and the staff made us feel at home."</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="David" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div><h4 class="font-bold">David Lee</h4><p class="text-sm text-gray-500">Orthopedic Patient</p></div>
+                    </div>
+                    <div class="text-yellow-400 mb-3">★★★★☆</div>
+                    <p class="text-gray-600 italic">"Successful knee replacement surgery and excellent rehabilitation program. Highly recommend."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-teal-400 mb-4">HealthCare</h3>
+                    <p class="text-gray-400">Providing quality healthcare services with compassion and excellence since 1995.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-teal-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-teal-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-teal-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-teal-400"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-teal-400">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-teal-400">Our Services</a></li>
+                        <li><a href="doctors.html" class="text-gray-400 hover:text-teal-400">Meet Our Doctors</a></li>
+                        <li><a href="appointment.html" class="text-gray-400 hover:text-teal-400">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Healthcare Ave, Medical District</li>
+                        <li><i class="fas fa-phone mr-2"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@healthcare.com</li>
+                        <li><i class="fas fa-clock mr-2"></i> 24/7 Emergency Services</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-3">Subscribe for health tips and updates</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="flex-1 px-3 py-2 rounded-l-lg text-gray-900 focus:outline-none">
+                        <button class="bg-teal-600 px-4 py-2 rounded-r-lg hover:bg-teal-700">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 HealthCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
