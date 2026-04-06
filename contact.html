@@ -4,74 +4,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us – HealthCare Hospital</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <nav class="bg-white shadow-lg sticky top-0 z-50">...</nav> <!-- copy navbar -->
+<body class="bg-gray-50">
 
-    <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
-            <p class="text-xl">We're here to help. Reach out to us for any questions or concerns.</p>
-        </div>
-    </section>
-
-    <section class="py-16">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <!-- Contact Form -->
-            <div class="bg-white rounded-2xl shadow-xl p-8">
-                <h2 class="text-2xl font-bold mb-6">Send us a Message</h2>
-                <form id="contact-form">
-                    <div class="mb-4"><label class="block font-semibold mb-2">Name *</label><input type="text" id="contact-name" class="w-full px-4 py-2 border rounded-lg"><p class="error text-red-500 text-sm hidden" id="contactNameError"></p></div>
-                    <div class="mb-4"><label class="block font-semibold mb-2">Email *</label><input type="email" id="contact-email" class="w-full px-4 py-2 border rounded-lg"><p class="error text-red-500 text-sm hidden" id="contactEmailError"></p></div>
-                    <div class="mb-4"><label class="block font-semibold mb-2">Subject *</label><input type="text" id="subject" class="w-full px-4 py-2 border rounded-lg"><p class="error text-red-500 text-sm hidden" id="subjectError"></p></div>
-                    <div class="mb-4"><label class="block font-semibold mb-2">Message *</label><textarea id="contact-message" rows="4" class="w-full px-4 py-2 border rounded-lg"></textarea><p class="error text-red-500 text-sm hidden" id="messageError"></p></div>
-                    <button type="submit" class="w-full bg-teal-600 text-white font-semibold py-3 rounded-lg hover:bg-teal-700">Send Message</button>
-                </form>
-                <div id="contact-success" class="hidden mt-4 p-3 bg-green-100 text-green-700 rounded-lg text-center"></div>
-            </div>
-            <!-- Contact Info -->
-            <div>
-                <h2 class="text-2xl font-bold mb-6">Get in Touch</h2>
-                <div class="space-y-6">
-                    <div class="flex items-start space-x-4 bg-white rounded-xl shadow-md p-5"><i class="fas fa-phone text-teal-600 text-2xl"></i><div><h3 class="font-bold">Phone</h3><p>Emergency: (555) 123-4567<br>Appointments: (555) 123-4568</p></div></div>
-                    <div class="flex items-start space-x-4 bg-white rounded-xl shadow-md p-5"><i class="fas fa-envelope text-teal-600 text-2xl"></i><div><h3 class="font-bold">Email</h3><p>info@healthcare.com<br>support@healthcare.com</p></div></div>
-                    <div class="flex items-start space-x-4 bg-white rounded-xl shadow-md p-5"><i class="fas fa-map-marker-alt text-teal-600 text-2xl"></i><div><h3 class="font-bold">Address</h3><p>123 Healthcare Avenue, Medical District, MD 12345</p></div></div>
-                    <div class="flex items-start space-x-4 bg-white rounded-xl shadow-md p-5"><i class="fas fa-clock text-teal-600 text-2xl"></i><div><h3 class="font-bold">Hours</h3><p>Emergency: 24/7<br>Outpatient: Mon-Sat 8AM-8PM</p></div></div>
+<!-- ✅ Navbar -->
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold">H</span>
                 </div>
-                <div class="mt-8 bg-gray-200 rounded-xl overflow-hidden h-64"><img src="https://picsum.photos/id/15/600/300" alt="Map" class="w-full h-full object-cover"></div>
+                <span class="text-xl font-bold text-teal-600">HealthCare</span>
+            </div>
+
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="appointment.html">Appointment</a>
+                <a href="contact.html" class="text-teal-600 font-bold">Contact</a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block py-2">Home</a>
+            <a href="about.html" class="block py-2">About</a>
+            <a href="services.html" class="block py-2">Services</a>
+            <a href="doctors.html" class="block py-2">Doctors</a>
+            <a href="appointment.html" class="block py-2">Appointment</a>
+            <a href="contact.html" class="block py-2 text-teal-600">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+        <p class="text-xl">We're here to help. Reach out to us for any questions or concerns.</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- Contact Form -->
+        <div class="bg-white rounded-2xl shadow-xl p-8">
+            <h2 class="text-2xl font-bold mb-6">Send us a Message</h2>
+            <form id="contact-form">
+                <div class="mb-4">
+                    <label class="block font-semibold mb-2">Name *</label>
+                    <input type="text" id="contact-name" class="w-full px-4 py-2 border rounded-lg">
+                    <p class="error text-red-500 text-sm hidden" id="contactNameError"></p>
+                </div>
+                <div class="mb-4">
+                    <label class="block font-semibold mb-2">Email *</label>
+                    <input type="email" id="contact-email" class="w-full px-4 py-2 border rounded-lg">
+                    <p class="error text-red-500 text-sm hidden" id="contactEmailError"></p>
+                </div>
+                <div class="mb-4">
+                    <label class="block font-semibold mb-2">Subject *</label>
+                    <input type="text" id="subject" class="w-full px-4 py-2 border rounded-lg">
+                    <p class="error text-red-500 text-sm hidden" id="subjectError"></p>
+                </div>
+                <div class="mb-4">
+                    <label class="block font-semibold mb-2">Message *</label>
+                    <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border rounded-lg"></textarea>
+                    <p class="error text-red-500 text-sm hidden" id="messageError"></p>
+                </div>
+                <button type="submit" class="w-full bg-teal-600 text-white font-semibold py-3 rounded-lg hover:bg-teal-700">Send Message</button>
+            </form>
+            <div id="contact-success" class="hidden mt-4 p-3 bg-green-100 text-green-700 rounded-lg text-center"></div>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+            <h2 class="text-2xl font-bold mb-6">Get in Touch</h2>
+            <div class="space-y-6">
+                <div class="flex items-start space-x-4 bg-white rounded-xl shadow-md p-5">
+                    <i class="fas fa-phone text-teal-600 text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold">Phone</h3>
+                        <p>Emergency: (555) 123-4567<br>Appointments: (555) 123-4568</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4 bg-white rounded-xl shadow-md p-5">
+                    <i class="fas fa-envelope text-teal-600 text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold">Email</h3>
+                        <p>info@healthcare.com<br>support@healthcare.com</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4 bg-white rounded-xl shadow-md p-5">
+                    <i class="fas fa-map-marker-alt text-teal-600 text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold">Address</h3>
+                        <p>123 Healthcare Avenue, Medical District, MD 12345</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4 bg-white rounded-xl shadow-md p-5">
+                    <i class="fas fa-clock text-teal-600 text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold">Hours</h3>
+                        <p>Emergency: 24/7<br>Outpatient: Mon-Sat 8AM-8PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 bg-gray-200 rounded-xl overflow-hidden h-64">
+                <img src="https://picsum.photos/id/15/600/300" alt="Map" class="w-full h-full object-cover">
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer class="bg-gray-900 text-white mt-16">...</footer>
-    <script src="js/main.js"></script>
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            let valid = true;
-            const name = document.getElementById('contact-name').value.trim();
-            const email = document.getElementById('contact-email').value.trim();
-            const subject = document.getElementById('subject').value.trim();
-            const message = document.getElementById('contact-message').value.trim();
-            
-            if (name.length < 2) { showError('contactNameError', 'Name required'); valid = false; } else hideError('contactNameError');
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) { showError('contactEmailError', 'Valid email required'); valid = false; } else hideError('contactEmailError');
-            if (!subject) { showError('subjectError', 'Subject required'); valid = false; } else hideError('subjectError');
-            if (message.length < 10) { showError('messageError', 'Message must be at least 10 characters'); valid = false; } else hideError('messageError');
-            
-            if (valid) {
-                document.getElementById('contact-success').textContent = '✓ Message sent! We will reply within 24 hours.';
-                document.getElementById('contact-success').classList.remove('hidden');
-                this.reset();
-                setTimeout(() => document.getElementById('contact-success').classList.add('hidden'), 5000);
-            }
-            function showError(id, msg) { const el = document.getElementById(id); el.textContent = msg; el.classList.remove('hidden'); }
-            function hideError(id) { document.getElementById(id).classList.add('hidden'); }
-        });
-    </script>
+<!-- ✅ Footer -->
+<footer class="bg-gray-900 text-white mt-16">
+    <div class="max-w-7xl mx-auto px-4 py-10 text-center">
+        <h3 class="text-2xl font-bold text-teal-400 mb-4">HealthCare</h3>
+        <p class="text-gray-400">Providing quality healthcare since 1995.</p>
+        <p class="text-gray-500 mt-6">&copy; 2024 HealthCare Hospital</p>
+    </div>
+</footer>
+
+<!-- ✅ Mobile Menu JS -->
+<script>
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const icon = menuBtn.querySelector('i');
+
+menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-times');
+});
+
+document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        icon.classList.add('fa-bars');
+        icon.classList.remove('fa-times');
+    });
+});
+</script>
+
+<!-- ✅ Contact Form Validation JS -->
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    let valid = true;
+    const name = document.getElementById('contact-name').value.trim();
+    const email = document.getElementById('contact-email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('contact-message').value.trim();
+
+    if (name.length < 2) { showError('contactNameError','Name required'); valid=false; } else hideError('contactNameError');
+    const emailRegex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(!emailRegex.test(email)){showError('contactEmailError','Valid email required'); valid=false;}else hideError('contactEmailError');
+    if(!subject){showError('subjectError','Subject required'); valid=false;}else hideError('subjectError');
+    if(message.length<10){showError('messageError','Message must be at least 10 characters'); valid=false;}else hideError('messageError');
+
+    if(valid){
+        const success = document.getElementById('contact-success');
+        success.textContent='✓ Message sent! We will reply within 24 hours.';
+        success.classList.remove('hidden');
+        this.reset();
+        setTimeout(()=>success.classList.add('hidden'),5000);
+    }
+
+    function showError(id,msg){ const el=document.getElementById(id); el.textContent=msg; el.classList.remove('hidden'); }
+    function hideError(id){ document.getElementById(id).classList.add('hidden'); }
+});
+</script>
+
 </body>
-</html>
+                    </html>
